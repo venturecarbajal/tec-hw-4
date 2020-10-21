@@ -19,13 +19,13 @@ header {
   padding-left: 10px;
 }
 
-.timer {
+#time {
   /* margin-right: 100px; */
   float: right;
   padding-right: 10px;
 }
 
-.quiz-container {
+#quiz-container {
   margin-top: 30px;
 }
 
