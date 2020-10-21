@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tec HW 04</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./Develop/reset.css" />
+
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -14,27 +18,98 @@
   </head>
   <body>
     <!-- Link to view highscores -->
-    <a class="scores" href="./Develop/highscores.html">View Highscores</a>
+    <a class="scores" href="./Develop/highscores.html">View High Scores</a>
 
     <!-- Countdown timer -->
-    <div class="timer">Time: 0</div>
+    <div id="time">
+      Time:
+      <div id="minutes">3</div>
+      <div id="seconds">00</div>
+    </div>
 
     <header>Startup & VC Quiz Challange</header>
 
-    <div class="container">
+    <div class="container" id="main-container">
       <div class="row">
         <div class="col-md">
-          Try to answer the following startup & venture capital-related
-          questions within the time limit. Keep in mind that incorrect answers
-          will penalize your score/time by ten seconds!
+          <p>
+            Try to answer the following startup & venture capital-related
+            questions within the time limit. Keep in mind that incorrect answers
+            will penalize your score/time by ten seconds!
+          </p>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <button class="btn">Start Quiz</button>
+          <button class="btn btn-primary" id="start-btn">Start Quiz</button>
         </div>
       </div>
     </div>
+
+    <div class="container" id="quiz-container">
+      <div class="row">
+        <div class="col">
+          <h3>Question 1: Who is the infamous founder and ex-CEO of WeWork?</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-info">Travis Kalanick</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-info">Adam Neumann</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-info">Elizabeth Holmes</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-info">Peter Thiel</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>
+            Question 2: What famed Silicon Valley consumer healthcare tech
+            company raised over $1B, but ultimately shutdown due to fraudulent
+            activity and misleading investors?
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-info">23andMe</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-info">CVS Health</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-info">GoodRX</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-info">Theranos</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Develop/script.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
