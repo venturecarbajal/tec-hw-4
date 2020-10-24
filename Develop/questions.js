@@ -1,4 +1,5 @@
 // Quiz Questions function
+function loadQuestions() {}
 
 const questions = [
   {
